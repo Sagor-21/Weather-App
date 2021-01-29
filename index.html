@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather Info</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="location" type="text" class="form-control" placeholder="Enter a location for Weather ...">
+                <div class="input-group-append">
+                    <button id="search" type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <div class="state">
+                <img class="w-25 flag" src="" alt="flag">
+                <div class="cityDetails">
+                    <h3>
+                        <span id="city"></span>,
+                        <span id="country"></span>
+                    </h3>
+    
+                    <p>Latitude :
+                         <span id="latitude"></span>
+                    </p>
+    
+                    <p>Longitude : 
+                        <span id="longitude"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="time">
+                 <h3 id="day">day</h3>
+                 <p id="date">night</p>
+            </div>
+            <div class="temp">
+                <h1>Temperature  <span id="temperature"></span> &deg; C</h1>
+                <h2 id="weather" class="lead"></h2>
+            </div>
+           
+
+            <div class="details">
+                <div>
+                    <p>Max-temp : <span id="maxTemp"></span>°C</p>
+                    <p>Min-temp : <span id="minTemp"></span>°C</p>
+                    <p>Feels-like : <span id="feel"></span>°C</p>
+                </div>
+                <div>
+                    <p>Humidity : <span id="humidity"></span>%</p>
+                    <p>Pressure : <span id="pressure"></span> hPa</p>
+                    <p>Wind-speed : <span id="wind"></span> m/s</p>
+                </div>
+            </div>
+            <footer class="text-center ">
+                <p>&copy; All rights reserved by Sagor</p>
+              </footer>
+            
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
